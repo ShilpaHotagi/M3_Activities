@@ -1,0 +1,103 @@
+<!doctype html>
+	<html>
+		<head>
+			<title>Online Cooking</title>
+			<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+			<script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+			<link rel="stylesheet" type="text/css" href="online.css" media="all"/>
+			 
+			 
+		</head>
+		<body>
+			<header>
+				<h2>ONLINE COOKING</h2>
+			  </header>
+			  
+			  <section>
+				<nav>
+			<table>  
+			<tr>
+				<th>
+					<div class="left">
+					 
+						<button class="accordion"><i class="material-icons">folder</i>&nbsp;&nbsp;&nbsp;&nbsp;chinese</button>
+					<div class="panel">
+							<button class="accordion"><i class="material-icons">folder</i>&nbsp;&nbsp;Starter</button>
+							
+							<button class="accordion"><i class="material-icons">folder</i>&nbsp;&nbsp;Main Course</button>
+							
+						<div class="panel">
+							  
+								<button class="accordion"><i class="material-icons">folder_open</i>&nbsp;&nbsp;Chicken hakka Noodles</button>
+							 
+							<div class="panel"> 
+								<div class="floatRight"> 
+								<a href="https://recipes.timesofindia.com/recipes/chicken-hakka-noodles/rs75356205.cms">
+								<img src="C:\Users\DELL\Desktop\noodles.jpg" alt="Cinque Terre" width="300" height="200">
+								</a>
+							</div>
+							</div>
+							
+							<button class="accordion"><i class="material-icons">folder_open</i>&nbsp;&nbsp;Egg Noodles</button>
+							<div class="panel">
+							<a href="https://www.indianhealthyrecipes.com/egg-noodles-recipe/">
+							<img src="C:\Users\DELL\Desktop\egg.jpg" alt="Cinque Terre" width="300" height="200">
+						</a>
+						</div>
+					</div>
+					</div>
+				</th>
+			</tr>
+			
+			<tr>
+				<th>
+					<button class="accordion"><i class="material-icons">folder</i>&nbsp;&nbsp;&nbsp;&nbsp; North Indian</button>
+					  
+				</th>
+			</tr>
+				
+				<tr>
+				<th>
+					<button class="accordion"><i class="material-icons">folder</i>&nbsp;&nbsp;&nbsp;&nbsp; South Indian</button>
+					</div>
+				</th>
+			</tr>
+			
+			<tr>
+				<th>
+					<button class="accordion"><i class="material-icons">folder</i>&nbsp;&nbsp;&nbsp;&nbsp; Thai</button>
+					</div>
+				</th>
+			</tr>
+				
+</table>	
+</nav>	
+</section>		
+				
+<script>
+	var acc = document.getElementsByClassName("accordion");
+	var i;
+
+		for (i = 0; i < acc.length; i++) 
+		{
+			acc[i].addEventListener("click", function() {
+			this.classList.toggle("active");
+			var panel = this.nextElementSibling;
+			if (panel.style.display === "block") {
+			panel.style.display = "none";
+		} 
+		else
+		{
+			panel.style.display = "block";
+		}
+  });
+}
+</script>
+
+<footer>
+	<h3>...Eating is a Necessity But Cooking is an Art...</h3>
+  </footer>
+  
+
+</body>
+		
