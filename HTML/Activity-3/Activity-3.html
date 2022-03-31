@@ -1,0 +1,82 @@
+<html>
+<head>
+<title>Sport Team</title>
+<script>
+function scores()
+	{
+	
+		var tex1=document.getElementById("team1").value;
+		console.log(tex1);
+	
+		var tex2=document.getElementById("team2").value;
+		console.log(tex2);
+	
+		var value1=document.getElementById("score1").value;
+		console.log(value1);
+	
+		var value2=document.getElementById("score2").value;
+		console.log(value2);
+	
+		const myArray1 = value1.split("/");
+		var va1=myArray1[0];
+		var wc1=myArray1[1];
+    
+		const myArray2 = value2.split("/");
+		var va2=myArray2[0];
+		var wc2=myArray2[1];
+	
+		if(tex1==tex2)
+		{
+			alert("Both team names can't be same");
+		}
+		else
+		{
+			if(va1<0 || va2<0)
+			{
+				alert("enter valid score");
+			}
+		else
+		{
+		if(va1>va2)
+			{
+				alert(tex1+" won by "+(va1-va2)+" runs");
+			}
+			else if(va2>va1)
+				{
+					alert(tex2+" won by "+(va2-va1)+" runs");
+				}
+			else
+				{
+					alert("fill the fields required");
+				}
+		}
+	}
+}
+</script>
+</head>
+<body border-color:blue;>
+<form>
+<table>
+<tr>
+	<td>Enter the Team Name 1</td>
+	<td>Score 1</td>
+</tr>
+<tr>
+	<td><input type="text" placeholder="Enter team name" id="team1" required></td>
+	<td><input type="text" placeholder="score" id="score1" required></td>
+</tr>
+<tr>
+	<td>Enter the Team Name 2</td>
+	<td>Score 2</td>
+</tr>
+<tr>
+	<td><input type="text" placeholder="Enter team name" id="team2" required></td>
+	<td><input type="text" placeholder="score" id="score2" required></td>
+</tr>
+<tr rowspan="2" align="center">
+	<td colspan="2"><input type="button" value="Result" onclick="scores()"></td>
+</tr>
+</table>
+</form>
+</body>
+</html>
