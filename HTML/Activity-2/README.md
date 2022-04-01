@@ -1,4 +1,4 @@
-#OUTPUT
+# OUTPUT
 
 ![Screenshot (648)](https://user-images.githubusercontent.com/98829965/161255043-0c6653eb-3ed1-4fdd-b932-d98212f7138e.png)
 
